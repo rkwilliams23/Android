@@ -16,6 +16,11 @@ public class GameManager extends SurfaceView implements SurfaceHolder.Callback {
     thread.setRunning(true);
     thread.start();
   }
+
+  @Override
+  public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
+    thread.setSurfaceHolder(holder);
+  }
   
   @Override
   public void surfaceDestroyed(SurfaceHolder holder) {
