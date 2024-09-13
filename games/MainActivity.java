@@ -13,6 +13,6 @@ public class MainActivity extends Activity
   
   requestWindowFeature(Window.FEATURE_NO_TITLE);
   
-  setContenView(R.layout.activity_main);
+  setContentView(R.layout.activity_main);
 }
 }
