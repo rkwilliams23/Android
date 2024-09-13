@@ -1,3 +1,6 @@
+package com.devtides.a2048clone;
+
+import android.content.Context;
 import android.util.AttributeSet;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
@@ -24,5 +27,15 @@ public class GameManager extends SurfaceView implements SurfaceHolder.Callback {
   
   @Override
   public void surfaceDestroyed(SurfaceHolder holder) {
+    boolean retry = true;
+    while (retry) {
+      try {
+        thread.setRunning(false);
+        thread.join();
+        retry = flase;
+      } catch(InterruptedException e) {
+        e.printStackTrace();
+      }
+    }
   }
 }
