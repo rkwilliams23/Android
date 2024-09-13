@@ -6,4 +6,9 @@
   android:layout_height="match_parent"
   tools:context=".MainActivity">
 
+  <com.devtides.a2048clone.GameManager
+    android:id="@+id/gameManager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
 </android.support.constraint.ConstrainLayout>
