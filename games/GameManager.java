@@ -11,6 +11,7 @@ public class GameManager extends SurfaceView implements SurfaceHolder.Callback {
   
   public GameManager(Context context, AttributeSet attrs) {
     super(context, attrs);
+    getHolder().addCallback(this);
   }
 
 @Override
@@ -40,10 +41,12 @@ public class GameManager extends SurfaceView implements SurfaceHolder.Callback {
   }
 
   public void update(){
+    //System.out.println( x: "Test2048Clone Update");
   }
 
   @Override
   public void draw(Canvas canvas) {
     super.draw(canvas);
+    //System.out.println("Test2048Clone draw")
   }
 }
