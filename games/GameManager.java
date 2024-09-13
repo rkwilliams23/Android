@@ -38,4 +38,12 @@ public class GameManager extends SurfaceView implements SurfaceHolder.Callback {
       }
     }
   }
+
+  public void update(){
+  }
+
+  @Override
+  public void draw(Canvas canvas) {
+    super.draw(canvas);
+  }
 }
