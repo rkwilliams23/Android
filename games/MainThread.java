@@ -28,8 +28,8 @@ public class ManinThread extends Thread {
   @Override
   public void run() {
     long startTime, timeMillis, waitTime;
-    long totaltime = 0;
-    int frameCount = 0;
+    //long totaltime = 0;
+    //int frameCount = 0;
     long targetTime = 1000 / targetFPS;
 
     while (runnning) {
